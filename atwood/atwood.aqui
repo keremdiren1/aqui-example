@@ -1,0 +1,82 @@
+//Aqui 3D
+// pulley
+shape3d donut inner {
+    outerRadius: 30
+    innerRadius: 7
+    depth: 7
+    position: [0, 100, 0]
+    material: {
+      transparent: false
+    }
+}
+shape3d donut outer {
+    outerRadius: 32
+    innerRadius: 7
+    depth: 4
+    position: [0, 100, 7]
+    material: {
+      transparent: false
+    }
+}
+shape3d donut outer2 {
+    outerRadius: 32
+    innerRadius: 10
+    depth: 4
+    position: [0, 100, -4]
+    material: {
+      transparent: false
+    }
+}
+// rope
+shape3d bezierCurve rope {
+    startPoint: [-30.5, 100]
+    controlPoint1: [-30.5, 140]
+    controlPoint2: [30.5, 140]
+    endPoint: [30.5, 100]
+    depth: 5
+    position: [0, 0, 3.5]
+    material: {
+      transparent: false
+    }
+}
+shape3d circle shortRope {
+    radius: 0.5
+    depth: 50
+    position: [-30.5, 75, 3.5]
+    material: {
+      transparent: false
+    }
+}
+transform shortRope{
+		rotate: [90, 0]
+}
+shape3d circle longRope {
+    radius: 0.5
+    depth: 80
+    position: [30.5, 60, 3.5]
+    material: {
+      transparent: false
+    }
+}
+transform longRope{
+		rotate: [90, 0]
+}
+// box
+shape3d rectangle lightBox {
+    width: 5
+    height: 5
+    depth: 5
+    position: [-30.5, 47.5, 3.5]
+    material: {
+      transparent: false
+    }
+}
+shape3d rectangle heavyBox {
+    width: 10
+    height: 10
+    depth: 10
+    position: [30.5, 15, 3.5]
+    material: {
+      transparent: false
+    }
+}
